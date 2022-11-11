@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+   
+    //URL to agency custom code and hosted on their own server.
+    
     <script
       src="https://serve-custom-js-botcopy.ey.r.appspot.com/botcopy-custom-code.js"
       async
     ></script>
+    
+    //Botcopy injection script
+    
     <script
       type="text/javascript"
       id="botcopy-embedder-d7lcfheammjct"
@@ -25,9 +31,9 @@
   <body>
     <h3>Botcopy External JS file demo</h3>
     <br />
-    <button onclick="closeWindow()">Close Window</button>
-    <button onclick="openWindow()">Open Window</button>
-    <button onclick="sendEvent('evenet_sample')">Send Event</button>
+    <button id="closeWindow">Close Window</button>
+    <button id="openWindow"onclick="openWindow()">Open Window</button>
+    <button id="sendEvent" onclick="sendEvent('evenet_sample')">Send Event</button>
     <br />
   </body>
 </html>
