@@ -6,7 +6,7 @@ window.addEventListener("botcopy-events", function (e) {
       break;
 
     case "bc-window-close":
-      alert("Window close");
+      //alert("Window close");
 
       // do something
       break;
