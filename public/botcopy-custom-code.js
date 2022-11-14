@@ -15,7 +15,7 @@ window.addEventListener("botcopy-events", function (e) {
 
 document.getElementById("closeWindow").addEventListener("click", closeWindow);
 document.getElementById("openWindow").addEventListener("click", openWindow);
-document.getElementById("sendEvent").addEventListener("click", sendEvent('evenet_sample'));
+document.getElementById("sendEvent").addEventListener("click", sendEvent);
 
 
 function closeWindow() {
@@ -26,7 +26,7 @@ function openWindow() {
 }
 
 function sendEvent(text, contextName, lifespan, parameters = {}) {
-  Botcopy.sendEvent(text, {
+  Botcopy.sendEvent('evenet_sample', {
     name: contextName || "context-name",
     lifespanCount: lifespan || 2,
     parameters: parameters,
