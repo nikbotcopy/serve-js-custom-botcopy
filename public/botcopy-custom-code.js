@@ -13,6 +13,11 @@ window.addEventListener("botcopy-events", function (e) {
   }
 });
 
+document.getElementById("closeWindow").addEventListener("click", closeWindow);
+document.getElementById("openWindow").addEventListener("click", openWindow);
+document.getElementById("sendEvent").addEventListener("click", sendEvent('evenet_sample'));
+
+
 function closeWindow() {
   Botcopy.closeWindow();
 }
@@ -27,3 +32,7 @@ function sendEvent(text, contextName, lifespan, parameters = {}) {
     parameters: parameters,
   });
 }
+
+
+
+//evenet_sample
